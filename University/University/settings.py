@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'University.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'University_Database',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'University_Application',
+        'USER':'root',
+        'PASSWORD':'',
+        'HOST':'localhost',
+        'port':'3306'
     }
 }
 
