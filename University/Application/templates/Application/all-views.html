@@ -1,0 +1,27 @@
+{% extends 'Application/base.html' %}
+{% block title %} University Application {% endblock %}
+{% block title1 %} University Application {% endblock %}
+
+{% block content %}
+
+<b style="font-family:'comic','times new roman','monospace'";><i>
+    <!--<a href = "{% url 'Application:student-add' %}">Add Student</a> <br>-->
+    <!--<a href = "{% url 'Application:department-add' %}">Add Department</a><br>-->
+    <!--<a href = "{% url 'Application:advisor-add' %}">Add Advisor</a><br>-->
+    <!--<a href = "{% url 'Application:instructor-add' %}">Add Instructor</a><br>-->
+    <!--<a href = "{% url 'Application:course-add' %}">Add Course</a><br>-->
+    <!--<a href = "{% url 'Application:section-add' %}">Add Section</a><br>-->
+    <table style="border-color: black;border:2px solid;border-collapse: collapse;color:yellow;" cellpadding="20px" cellspacing="10px">
+        <tr><th>
+        <a href = "{% url 'Application:student' %}">Students</a></th>
+        <th><a href = "{% url 'Application:department' %}">Departments</a></th>
+        <th><a href = "{% url 'Application:course' %}">Courses</a></th>
+        <th><a href = "{% url 'Application:advisor' %}">Advisors</a></th>
+        <th><a href = "{% url 'Application:instructor' %}">Instructors</a></th>
+        
+        <th><a href = "{% url 'Application:section' %}">Sections</a></th></table>
+    </b>
+</b></i>
+<div>
+<br><br><a href="{%url 'Application:all-views' %}" ><b>Go to Application</b></a></div>
+{% endblock %}
